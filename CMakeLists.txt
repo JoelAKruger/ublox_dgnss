@@ -4,3 +4,6 @@ project(ublox_dgnss)
 add_subdirectory(ntrip_client_node)
 add_subdirectory(ublox_ubx_interfaces)
 add_subdirectory(ublox_ubx_msgs)
+add_subdirectory(ublox_nav_sat_fix_hp_node)
+
+add_dependencies(ublox_nav_sat_fix_hp_node ublox_ubx_msgs)
